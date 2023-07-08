@@ -9,6 +9,7 @@
   /* Set global styles */
   body {
     font-family: Arial, sans-serif;
+<<<<<<< Updated upstream
     background-color: #E6FFFD;
     width: 100vw;
     height: 100vh;
@@ -18,6 +19,19 @@
     background-image:url("img/NewEventbg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+=======
+    /* background-color: #E6FFFD; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("img/NewEventbg1.jpg");
+    /* max-width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+>>>>>>> Stashed changes
     background-position-y:0%;
   }
   
