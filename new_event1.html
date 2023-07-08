@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Management Website</title>
+  <link rel="stylesheet" href="styles_newevent.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create Event</h2>
+    <form id="eventForm">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" name="eventName" required>
+
+      <label for="eventDate">Event Date:</label>
+      <input type="date" id="eventDate" name="eventDate" required>
+
+      <label for="eventTime">Event Time:</label>
+      <input type="time" id="eventTime" name="eventTime" required>
+
+      <label for="eventVenue">Event Venue:</label>
+      <input type="text" id="eventVenue" name="eventVenue" required>
+
+      <label for="eventDetails">Event Details:</label>
+      <textarea id="eventDetails" name="eventDetails" required></textarea>
+
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
