@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles_newevent.css">
+  <title>New Event</title>
+</head>
+<body class="bg">
+
+  <section id="title">
+    <div class="logo">
+        Eventify
+    </div>
+    <div class="menu">
+      <a href="index.html" >Home</a>
+      <a href="#">About Us</a>
+      <a href="new_event1.html" class="active">Add Event</a>
+      <a href="events.html">Events</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="register">
+        <a href="loginpg.html">Login</a>
+</section>
+
+<section id="hero">
+  <div class="container">
+    <h2><center>Create Event</center></h2>
+    <form id="eventForm">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" name="eventName" required>
+
+      <label for="eventStartDate">Event Start Date:</label>
+      <input type="date" id="eventStartDate" name="eventStartDate" required>
+
+      <label for="eventEndDate">Event End Date:</label>
+      <input type="date" id="eventEndDate" name="eventEndDate" required>
+
+      <label for="eventTime">Event Time:</label>
+      <input type="time" id="eventTime" name="eventTime" required>
+
+      <label for="eventVenue">Event Venue:</label>
+      <input type="text" id="eventVenue" name="eventVenue" required>
+
+      <label for="eventDetails">Event Details:</label>
+      <textarea id="eventDetails" name="eventDetails" required></textarea>
+
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+</section>
+
+  <section class="footer">
+    <p>&copy; 2023 Eventify. All rights reserved.</p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+body {
+  text-align: center;
+  background-image: url(../img/elevated-view-origami-crafts-art.jpg);
+  /* background: #98EECC; */
+  /* background-color: #A1C2F1; */
+  background-repeat: no-repeat;
+background-size: cover;
+background-position-y:0%;
+}
+
+.menu a.active,
+.menu a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
+#title {
+  width: 100%;
+  height: 80px;
+  background-color: #E6FFFD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+}
+
+.logo {
+  font-size: 2em;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+}
+
+.menu a {
+  font-family: sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  position: relative;
+}
+
+.menu a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid #A1C2F1;
+  transition: 0.4s linear;
+}
+
+.menu a:hover:before {
+  width: 90%;
+}
+
+.register a {
+  font-family: sans-serif;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background: #A1C2F1;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.register a:hover {
+  background: transparent;
+  border: 1px solid #A1C2F1;
+}
+
+.myCard {
+  background-color: transparent;
+  width: 475px;
+  height: 635px;
+  perspective: 1000px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.innerCard {
+  position: relative;
+  width: 475px;
+  height: 635px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 475px;
+  height: 635px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+.city{
+  font-size: 2rem;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 475px;
+  height: 635px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.carousel-item {
+  height: 700px;
+  padding: 15px 35%;
+  /* padding-bottom: 5%; */
+  text-align: center;
+  /* border-radius: 10px; */
+  /* position: relative; */
+  /* margin-bottom: 100px; */
+
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  padding: 2px 80px;
+  margin: 0;
+  color: #E6FFFD;
+  text-align: center;
+  background: #484872;
+}
