@@ -7,11 +7,12 @@
  
 .head{
   font-size: 55px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Lobster';
   text-align: center;
   color: black;
   padding: 20px;
   margin-bottom: 10px;
+
 }
 
 #title {
@@ -31,6 +32,7 @@
   letter-spacing: 2px;
   display: flex;
   align-items: center;
+  font-family:'Lobster';
 }
 
 .logo img {
