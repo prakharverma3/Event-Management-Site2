@@ -1,17 +1,11 @@
-body{
-    /* text-align: center; */
-    /* margin-left: 37vw;
-       margin-top: 78px;
-        */
 
-     
-}
 .bg{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: -1;
 }
 .bg::after{
   content: '';
@@ -25,6 +19,8 @@ body{
   left: 0;
   right: 0;
   opacity: 0.23;
+  background-color: #01010173;
+z-index: -1;
 }
 
 .form-box {
