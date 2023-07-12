@@ -31,14 +31,17 @@ background-position-y:0%;
 
 .logo {
   font-size: 2em;
-letter-spacing: 2px;
-
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
   width: 60px;
   height: 60px;
+  margin-right: 10px;
 }
+
 
 .menu a {
   padding: 10px 20px;
