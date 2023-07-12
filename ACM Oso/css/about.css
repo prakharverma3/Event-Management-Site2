@@ -4,18 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
-  .menu a.active,
-.menu a:hover{
-    text-decoration: underline;
-    color: grey;
-}
-
-
-.head img{
-     margin-right: 9px;
-     margin-bottom: -6px;
-}
-
+ 
 .head{
   font-size: 55px;
   font-family: 'Times New Roman', Times, serif;
@@ -34,20 +23,33 @@
   align-items: center;
   margin: 0%;
   padding: 0%;
-  position: relative;
 }
+
 
 .logo {
   font-size: 2em;
-  letter-spacing: 2px;
+letter-spacing: 2px;
+
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
 }
 
 .menu a {
+  /* font-family: sans-serif; */
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
   color: black;
   position: relative;
+}
+
+.menu a.active,
+.menu a:hover {
+  text-decoration: underline;
+  color: grey;
 }
 
 .menu a:before {
@@ -57,7 +59,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  border-bottom: 2px solid #A1C2F1;
+  border-bottom: 2px solid #90b8f6;
   transition: 0.4s linear;
 }
 
@@ -66,18 +68,19 @@
 }
 
 .register a {
+  /* font-family: sans-serif; */
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
   color: black;
-  background: #A1C2F1;
+  background: #90b8f6;
   border-radius: 10px;
   transition: 0.4s;
 }
 
 .register a:hover {
   background: transparent;
-  border: 1px solid #A1C2F1;
+  border: 1px solid #90b8f6;
 }
 
 .about{

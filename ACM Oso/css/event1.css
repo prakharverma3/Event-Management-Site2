@@ -31,7 +31,13 @@ background-position-y:0%;
 
 .logo {
   font-size: 2em;
-  letter-spacing: 2px;
+letter-spacing: 2px;
+
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
 }
 
 .menu a {
