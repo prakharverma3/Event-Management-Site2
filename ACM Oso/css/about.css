@@ -2,12 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
   .menu a.active,
 .menu a:hover{
     text-decoration: underline;
     color: grey;
+}
+
+
+.head img{
+     margin-right: 9px;
+     margin-bottom: -6px;
+}
+
+.head{
+  font-size: 55px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
 #title {
@@ -25,11 +40,9 @@
 .logo {
   font-size: 2em;
   letter-spacing: 2px;
-  font-family: sans-serif;
 }
 
 .menu a {
-  font-family: sans-serif;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
@@ -53,7 +66,6 @@
 }
 
 .register a {
-  font-family: sans-serif;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
@@ -68,26 +80,93 @@
   border: 1px solid #A1C2F1;
 }
 
+.about{
+  background-image: url(../img/composition-crepe-paper-clips-fa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; 
+}
+
+.cover{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.about-content{
+  width:900px;
+  height: 700px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  margin: 25px;
+  padding: 15px;
+  width: 900px;
+  height: 500px;
+  box-shadow: -1px 0 10px #000000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(187, 191, 193, 0.6);
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 50 px;
+}
+
+.box img{
+  width: 300px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border-bottom: 5px #72bde3a4 solid;
+}
+
+.box p{
+  font-size: larger;
+}
+
+.intro p{
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 200px 20px;
+  padding: 10px;
+  border-image: linear-gradient(to bottom,teal,rgba(0,0,0,0))1 100%;
+  border-left-style: solid;
+  border-width: 5px;
+  border-image-slice: 1;
+  text-decoration: wavy;
+}
+.ques{
+  padding: 5px 0px;
+  display: flex;
+  background-image: linear-gradient(to right,rgba(0, 128, 128, 0.493),rgba(0, 0, 0, 0));
+  font-size: 34px;
+  justify-content: center;
+  align-items: center;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: teal;
+  border-spacing: 5px;
+  margin: 45px 600px -30px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-.footer{
-  
-  width:100%;
-  height:80px;
-  padding:20px 80px;
-  margin-top: 41.5vh;;
+.footer {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 2px 80px;
+  margin: 0;
+  padding-top: 2px;
   color: #E6FFFD;
-  text-align:center;
-  background:#484872;
+  text-align: center;
+  background: #484872;
 }

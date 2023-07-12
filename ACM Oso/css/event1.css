@@ -1,3 +1,6 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 body {
   text-align: center;
   background-image: url(../img/elevated-view-origami-crafts-art.jpg);
@@ -29,11 +32,9 @@ background-position-y:0%;
 .logo {
   font-size: 2em;
   letter-spacing: 2px;
-  font-family: sans-serif;
 }
 
 .menu a {
-  font-family: sans-serif;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
@@ -57,7 +58,6 @@ background-position-y:0%;
 }
 
 .register a {
-  font-family: sans-serif;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
