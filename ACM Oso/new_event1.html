@@ -19,7 +19,7 @@
     <div class="menu">
       <a href="index.html" >Home</a>
       <a href="about.html">About Us</a>
-      <a href="new_event1.html" class="active">Add Event</a>
+      <a href="new_event1.html" class="activee">Add Event</a>
       <a href="events.html">Events</a>
       <a href="index.html#contact">Contact Us</a>
     </div>
@@ -49,7 +49,25 @@
       <label for="eventDetails">Event Details:</label>
       <textarea id="eventDetails" name="eventDetails" required></textarea>
 
-      <button type="submit">Create Event</button>
+      <div class="containerbutton">
+        <button id="btn">
+            <p id="btnText">Submit</p>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+    </div>
+    <script type="text/javascript">
+        const btn = document.querySelector("#btn");
+        const btnText = document.querySelector("#btnText");
+
+        btn.onclick = () => {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add("active");
+        };
+    </script>
     </form>
   </div>
 </section>

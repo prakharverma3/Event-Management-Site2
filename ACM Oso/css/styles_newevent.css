@@ -6,14 +6,6 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Set global styles */
-/* body {
-  background-color: #E6FFFD;
-  background-image: url("../img/premium_photo-1661775444028-3ca7.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position-y: 0%;
-} */
 .bg {
   min-height: 100vh;
   display: flex;
@@ -38,9 +30,11 @@
   /* opacity: 0.23; */
 }
 
-.menu a.active,
+.menu a.activee{
+  text-decoration: underline;
+    color: grey;
+}
 .menu a:hover{
-    text-decoration: underline;
     color: grey;
 }
 
@@ -112,7 +106,7 @@
 
 .container {
   width: 30vw;
-  margin: 20px auto;
+  margin: 51px auto;
   padding: 20px;
   background-color: #bccce3;
   border-radius: 10px;
@@ -225,4 +219,98 @@ button[type="submit"]:hover {
   color: #E6FFFD;
   text-align:center;
   background:#484872;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.containerbutton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 210px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.check-box{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    opacity: 0;
+}
+
+.check-box svg{
+    width: 20px;
+    margin: 10px;
+}
+
+svg path{
+    stroke-width: 3;
+    stroke: #fff;
+    stroke-dasharray: 34;
+    stroke-dashoffset: 34;
+    stroke-linecap: round;
+}
+
+.active{
+    background: #ff2b75;
+    transition: 1s;
+}
+
+.active .check-box{
+    right: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p{
+    margin-right: 125px;
+    transition: 1s;
+}
+
+.active svg path{
+    stroke-dashoffset: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+@media screen and (max-width: 909px) {
+  #title {
+    flex-direction: column;
+    height: 100px;
+}
+
+#title div a{
+    font-size: 0.8rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+.logo {
+    font-size: 1em;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+  }
+.container {
+    width: 60vw;
+  }
 }

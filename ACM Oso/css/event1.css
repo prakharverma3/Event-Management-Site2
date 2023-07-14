@@ -195,3 +195,26 @@ background-position-y:0%;
   text-align: center;
   background: #484872;
 }
+
+@media screen and (max-width: 909px) {
+  #title {
+    flex-direction: column;
+    height: 100px;
+}
+
+#title div a{
+    font-size: 0.8rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+.logo {
+    font-size: 1em;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+  }
+.container {
+    width: 60vw;
+  }
+}
