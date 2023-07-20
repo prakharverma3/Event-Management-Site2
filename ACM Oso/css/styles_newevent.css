@@ -37,6 +37,7 @@
 }
 .menu a:hover {
   color: grey;
+  text-decoration: underline;
 }
 
 #title {
