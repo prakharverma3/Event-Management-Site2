@@ -1,12 +1,34 @@
+.bg{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+.bg::after{
+  content: '';
+  background-image: url(../img/notepad-pen-paper-clipboard-with.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.52;
+  background-color: #01010173;
+z-index: -1;
+}
+
+
 *{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
     text-align: center;
-    margin-left: 40%;
-       margin-top: 10%;
-       background-color: #4d08d859
-       ;
+   
       background-blend-mode: color-burn ;
 }
 
